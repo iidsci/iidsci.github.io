@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', san-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/** Header **/
+header#ms_header {
+    padding: 20px 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    align-items: center;
+    background: rgba(244, 244, 244);
+    box-shadow: 0px -2px 5px rgb(0 0 0 / 50%);
+}
+
+.ms_site_name .site_name {
+    width: 100px;
+    height: 55px;
+    position: relative;
+}
+
+.ms_site_name .site_name h2 {
+    font-size: 45px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #020940;
+    padding-left: 5px;
+}
+
+.ms_site_name .site_name span.ms_sub_title {
+    font-size: 6px;
+    text-transform: capitalize;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+}
+
+ul.ms_menu_items{
+	text-align: right;
+}
+
+.ms_menus .ms_menu_items .ms_menu_item {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.ms_menus .ms_menu_items .ms_menu_item:last-child {
+    margin-right: 0px;
+}
+
+.ms_menus .ms_menu_items .ms_menu_item a.ms_item {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #020940;
+    position: relative;
+}
+
+a.ms_item.active{
+	font-weight: 600;
+}
+
+a.ms_item.active:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #020940;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+a.ms_item:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #020940;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+
+a.ms_item:hover:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #020940;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+section#ms_banner_section {
+    background-image: url(./images/background.png);
+    height: 650px;
+    background-size: cover;
+    padding: 50px 150px;
+}
+
+.ms_banner {
+    background: rgba(203,201,201, 48%);
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.banner_title{
+	width: 100%;
+}
+
+.banner_title h1 {
+    font-size: 65px;
+    line-height: 70px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 750px;
+    margin: auto;
+    color: #fff;
+    text-shadow: 6px 10px 6px rgb(0 0 0 / 16%);
+}
+
+.banner_cta {
+    max-width: 250px;
+    margin: auto;
+    background: #020940;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+
+.banner_cta a {
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+section#ms_content {
+    padding: 80px 150px;
+}
+
+section#ms_content .ms_about-section h2 {
+    font-size: 45px;
+    line-height: 52px;
+    text-align: center;
+    color: #020940;
+    margin-bottom: 35px;
+}
+
+h2.ms_heading {
+    border-bottom: 3px solid #000;
+    position: relative;
+    margin: auto;
+    width: 165px;
+}
+
+h2.ms_heading:after {
+    content: '';
+    width: 15px;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -5px;
+}
+
+h2.ms_heading:hover:after {
+    left: 100%;
+}
+
+.ms_about-section p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    text-align: center;
+}
+
+section.ms_course {
+    background: #f4f4f4;
+}
+
+.ms_course_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+
+.ms_course_box .ms_course img {
+    width: 100%;
+}
+
+.ms_course-img {
+    background: #020940;
+    padding: 40px 100px;
+}
+
+.ms_course {
+    background: #fff;
+    padding: 50px 0px;
+}
+
+.ms_course h4 {
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.ms_read-more a {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.ms_read-more {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.ms_course-reg {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    background: #020940;
+    margin-top: 40px;
+}
+
+.ms_course-reg a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 6px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ms_course-para{
+	margin-bottom: 30px;
+}
+
+section.ms_enquery {
+    background: #020940;
+}
+
+.ms_enquery-section .ms_heading {
+    text-align: left;
+    margin: initial;
+    width: 173px;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 35px;
+}
+
+.ms_enquery-section .ms_heading:after {
+    content: '';
+    width: 15px;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -5px;
+}
+
+.ms_enquery-form form .ms_form-field {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+}
+
+label.ms_label {
+    font-size: 18px;
+    color: #fff;
+    line-height: 21px;
+}
+
+.col-first {
+    display: flex;
+    flex-direction: column;
+}
+
+.ms_form-field input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.ms_enquery-form form input, .ms_enquery-form form select, .ms_enquery-form textarea {
+	margin-top: 10px;
+}
+
+.ms_form-field select {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 6px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.ms_planing {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ms_planing .yes, .ms_planing .no {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+.ms_date {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.ms_joining-date {
+    margin-top: 30px;
+}
+
+.email-phone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.edu-intrest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+
+.ms_message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.ms_message textarea {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    height: 156px;
+    resize: none;
+}
+
+.ms_submit {
+    padding: 30px 0px;
+    text-align: right;
+}
+
+.ms_submit input#submit {
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    background: #00020D;
+    width: 150px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 50px;
+    float: right;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.form_heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+}
+
+.form_heading #result {
+    color: #4F8A10;
+    background: #DFF2BF;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media(max-width: 1024px){
+	header#ms_header {
+	    padding: 10px 50px;
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    grid-gap: 20px;
+	    align-items: center;
+	    background: rgba(244, 244, 244);
+	    box-shadow: 0px -2px 5px rgb(0 0 0 / 50%);
+	}
+
+	section#ms_banner_section {
+	    background-image: url(./images/background.png);
+	    height: 450px;
+	    background-size: cover;
+	    padding: 50px 50px;
+	}
+
+	.banner_cta {
+    max-width: 250px;
+    margin: auto;
+    background: #020940;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+.banner_title h1 {
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 594px;
+    margin: auto;
+    color: #fff;
+    text-shadow: 6px 10px 6px rgb(0 0 0 / 16%);
+}
+section#ms_content {
+    padding: 50px;
+}
+.ms_course h4 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ms_read-more {
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
+}
+.ms_course-reg {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    background: #020940;
+    margin-top: 0px;
+}
+.ms_course {
+    background: #fff;
+    padding: 30px 0px;
+}
+}
+
+@media(max-width: 980px){
+	.banner_title h1 {
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 594px;
+    margin: auto;
+    color: #fff;
+    text-shadow: 6px 10px 6px rgb(0 0 0 / 16%);
+}
+.ms_course_box {
+    display: grid;
+    grid-template-columns: unset !important;
+    grid-gap: 35px;
+}
+.ms_course h4 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.ms_course {
+    background: #fff;
+    padding: 50px 0px;
+}
+
+.ms_enquery-form form .ms_form-field {
+    display: grid;
+    grid-template-columns: unset;
+    grid-gap: 30px;
+}
+.email-phone {
+    display: grid;
+    grid-template-columns: unset;
+    grid-gap: 0;
+}
+.edu-intrest {
+    display: grid;
+    grid-template-columns: unset;
+    grid-gap: 30px;
+}
+.ms_about-section p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-align: center;
+}
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home | Indian Institute of Data Science</title>
+
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+<header id="ms_header">
+	<div class="ms_site_name">
+		<div class="site_name">
+			<a href="/">
+				<h2>IIDS</h2>
+				<span class="ms_sub_title">Indian Institute of Data Science</span>
+			</a>
+		</div>
+		
+	</div>
+	<div class="ms_menus">
+		<ul class="ms_menu_items">
+			<li class="ms_menu_item">
+				<a class="ms_item active" href="/">Home</a>
+			</li>
+			<li class="ms_menu_item">
+				<a class="ms_item" href="#about">About</a>
+			</li>
+			<li class="ms_menu_item">
+				<a class="ms_item" href="#course">Course</a>
+			</li>
+		</ul>
+	</div>
+</header>
+
+<section id="ms_banner_section">
+	<div class="ms_banner">
+		<div class="banner_title">
+			<h1>Indian Institute of Data Science</h1>
+			<div class="banner_cta">
+				<a href="">Register</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="ms_content">
+	<div class="ms_about-section" id="about">
+		<h2 class="ms_heading">About</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	</div>
+</section>
+
+
+<section id="ms_content" class="ms_course">
+	<div class="ms_about-section" id="course">
+		<h2 class="ms_heading">Course</h2>
+		<p class="ms_course-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+		<div class="ms_course_box">
+			<div class="ms_couse-one ms_course">
+				<h4>Data Scince</h4>
+				<div class="ms_course-img">
+					<img src="./images/scatter.png">
+				</div>
+				<div class="ms_read-more">
+					<a href="">Read More</a>
+				</div>
+
+				<div class="ms_course-reg">
+					<a href="">Register</a>
+				</div>
+			</div>
+
+			<div class="ms_couse-second ms_course">
+				<h4>Data Mining</h4>
+				<div class="ms_course-img">
+					<img src="./images/solid.png">
+				</div>
+				<div class="ms_read-more">
+					<a href="">Read More</a>
+				</div>
+
+				<div class="ms_course-reg">
+					<a href="">Register</a>
+				</div>
+			</div>
+
+			<div class="ms_couse-third ms_course">
+				<h4>Machine Learning</h4>
+				<div class="ms_course-img">
+					<img src="./images/learning.png">
+				</div>
+				<div class="ms_read-more">
+					<a href="">Read More</a>
+				</div>
+
+				<div class="ms_course-reg">
+					<a href="">Register</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="ms_content" class="ms_enquery">
+	<div class="ms_enquery-section">
+		<div class="form_heading">
+			<h2 class="ms_heading">Enquery Form</h2>
+			<p id='result'></p>
+		</div>
+		<div class="ms_enquery-form">
+			<form action="database.php" method="post" id='msEnqueryForm'>
+				<div class="ms_form-field">
+					<div class="col-first">
+						<label class="ms_label">Name</label>
+						<input type="text" name="name" placeholder="Name" required="required" />
+						
+						<label class="ms_label">Work Experience</label>
+						<select name="exp">
+							<option value="Work Experience">Work Experience</option>
+							<option value="1 Years">1 Years</option>
+							<option value="2 Years">2 Years</option>
+							<option value="3 Years">3 Years</option>
+							<option value="4 Years">4 Years</option>
+							<option value="5 Years">5 Years</option>
+							<option value="6 Years">6 Years</option>
+						</select>
+
+						<div class="ms_planing">
+							<label class="ms_label">Planing to join in</label>
+
+							<div class="yes">
+								<input type="radio" id="yes" name="planing" value="yes">
+								<label for="yes">Yes</label>
+							</div>
+							<div class="no">
+								<input type="radio" id="no" name="planing" value="no">
+								<label for="no">No</label>
+							</div>							
+
+							<div class="ms_joining-date" id="ms_joining_date">
+								<label class="ms_label">Joining Date</label>
+								<div class="ms_date" id="msSelectdate">
+									<select name="join_date" disabled="disabled">
+										<option value="Day">Day</option>
+										<option value="01">O1</option>
+										<option value="02">O2</option>
+										<option value="03">O3</option>
+										<option value="04">O4</option>
+										<option value="05">O5</option>
+										<option value="06">O6</option>
+										<option value="07">O7</option>
+										<option value="08">O8</option>
+									</select disabled="disabled">
+
+									<select name="join_month" disabled="disabled">
+										<option value="month">Month</option>
+										<option value="1">Jan</option>
+										<option value="2">Feb</option>
+										<option value="3">Mar</option>
+										<option value="4">Apr</option>
+										<option value="5">May</option>
+										<option value="6">Jun</option>
+										<option value="7">Jul</option>
+										<option value="8">Aug</option>
+									</select>
+
+									<select name="join_year" disabled="disabled">
+										<option value="year">Year</option>
+										<option value="1">2O21</option>
+										<option value="2">2O21</option>
+										<option value="3">2O21</option>
+										<option value="4">2O21</option>
+										<option value="5">2O21</option>
+										<option value="6">2O21</option>
+										<option value="7">2O21</option>
+										<option value="8">2O21</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-second">
+						<div class="email-phone">
+							<div class="email">
+								<label class="ms_label">Email ID</label>
+								<input type="text" name="mail" placeholder="Email ID" required="required">
+							</div>
+							
+							<div class="number">
+								<label class="ms_label">Mobile Number</label>
+								<input type="text" name="contact" placeholder="Mobile Number">
+							</div>
+							
+						</div>
+
+						<div class="edu-intrest">
+							<div class="edu">
+								<label class="ms_label">Education</label>
+								<select name="edu">
+									<option value="select your education">Select your education</option>
+									<option value="B.Tech">B.Tech</option>
+									<option value="M.Tech">M.Tech</option>
+									<option value="B.Com">B.Com</option>
+								</select>
+							</div>
+
+							<div class="intreset">
+								<label class="ms_label">Interested in course</label>
+								<select name="course">
+									<option value="select your course">Select your course</option>
+									<option value="Data Science">DS</option>
+									<option value="Machine Learning">ML</option>
+									<option value="Deep Learning">DL</option>
+								</select>
+							</div>
+						</div>
+						<div class="ms_message">
+							<label class="ms_label">Message</label>
+							<textarea placeholder="Message" name="message"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="ms_submit">
+					<input type="submit" id="submit" />
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<!---- JQuery------->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="./ms_jquery.js"></script>
+</body>
+</html>
