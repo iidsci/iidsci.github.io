@@ -99,7 +99,7 @@ a.ms_item:hover:after {
 
 
 section#ms_banner_section {
-    background-image: url(./images/background.png);
+    background-image: url(./background.png);
     height: 650px;
     background-size: cover;
     padding: 50px 150px;
